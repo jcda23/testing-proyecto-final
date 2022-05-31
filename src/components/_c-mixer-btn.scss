@@ -1,0 +1,104 @@
+.mixer-btn {
+  a {
+    display: inline-block;
+    position: relative;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    width: 200px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: color("primary");
+    color: color("wth");
+    span {
+      position: absolute;
+      display: block;
+      background: color("second");
+    }
+    span:nth-child(1) {
+      left: 0;
+      bottom: 0;
+      width: 1.2px;
+      height: 100%;
+      transform: scaleY(0);
+      transform-origin: top;
+      transition: transform 0.25s;
+      border-radius: 0.5rem;
+    }
+    span:nth-child(2) {
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 1.2px;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.25s;
+      transition-delay: 0.5s;
+    }
+    span:nth-child(3) {
+      right: 0;
+      top: 0;
+      width: 3px;
+      height: 100%;
+      transform: scaleY(0);
+      transform-origin: bottom;
+      transition: transform 0.25s;
+      transition-delay: 0.5s;
+    }
+    span:nth-child(4) {
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 1.2px;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.25s;
+      transition-delay: 0.75s;
+    }
+  }
+  a:hover {
+    background-color: color("second");
+    color: color("wth");
+    transition: 0.4s;
+    transition-delay: 1s;
+    opacity: 1;
+    width: 225px;
+    letter-spacing: 3px;
+  }
+  a:hover span:nth-child(1) {
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 0.25s;
+  }
+  a:hover span:nth-child(2) {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.5s;
+  }
+  a:hover span:nth-child(3) {
+    transform: scaleY(1);
+    transform-origin: top;
+    transition: transform 0.25s;
+    transition-delay: 0.5s;
+  }
+  a:hover span:nth-child(4) {
+    transform: scaleX(1);
+    transform-origin: right;
+    transition: transform 0.25s;
+    transition-delay: 0.75s;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mixer-btn {
+    a {
+      background-color: color("second");
+
+      span {
+        background: color("primary");
+      }
+    }
+    a:hover {
+      background-color: color("primary");
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.banner {
+  @extend .guid-pages;
+  padding: 0 1rem;
+  .banner-container {
+    margin: 0 auto;
+    max-width: $max-width;
+    .banner-image {
+      @extend .picture-guid-page;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .banner {
+    padding: 0;
+  }
+}

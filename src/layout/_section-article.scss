@@ -1,0 +1,16 @@
+.article-container {
+  padding: 4rem 1rem;
+  .article-title {
+    @extend .section-title;
+    padding-bottom: 2rem;
+  }
+  .article-text {
+    @extend .text;
+  }
+}
+
+@media (min-width: 1024px) {
+  .article-container {
+    padding: 4rem 0;
+  }
+}

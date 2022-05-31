@@ -1,0 +1,56 @@
+.logo-container {
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+  background-color: transparent;
+  border-radius: 50%;
+  overflow: hidden;
+
+  .logo {
+    position: absolute;
+    inset: 0.2rem;
+    border: 1px solid color("second");
+    z-index: 3;
+    border-radius: 50%;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      @extend .size-custom-img;
+    }
+  }
+}
+
+.logo-container::before {
+  content: "";
+  position: absolute;
+  inset: -1px 0.5rem;
+  background: $linear-gradient-span-btn;
+  transition: 0.5s;
+  animation: box-animate 4s linear infinite;
+}
+
+.logo-container:hover::before {
+  inset: -20px 0px;
+}
+
+.logo-container::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background-color: color("second");
+  border-radius: 50%;
+  z-index: 1;
+  transition: 0.5s;
+  animation: box-animate 4s linear;
+}
+
+@keyframes box-animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

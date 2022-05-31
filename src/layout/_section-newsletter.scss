@@ -1,0 +1,144 @@
+.newsletter {
+  padding: 1rem 1rem;
+  .section-newsletter {
+    position: relative;
+    @include hero-image("../img/camping.jpg");
+    width: 100%;
+    min-height: 60vh;
+    padding: 100px 40px;
+    text-align: center;
+    color: color("wth");
+    .form-new {
+      @include flexible(flex, column, center, center);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: color("blk-alpha");
+      h2 {
+        font-weight: 500;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        font-size: 2.4rem;
+        font-weight: bold;
+      }
+
+      .newsletter-text {
+        @extend .text;
+        display: block;
+        text-align: center;
+        max-width: 400px;
+        margin-top: 10px auto;
+        color: white;
+        font-weight: 15000;
+        font-style: italic;
+        padding: 0 1rem;
+        font-size: 1.8rem;
+      }
+
+      .newsletter-small {
+        padding: 0 1rem;
+        font-size: 1.3rem;
+      }
+
+      .email-box {
+        margin: 2rem 0;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+
+        i {
+          background-color: color("second");
+          width: 40px;
+          line-height: 40px;
+          border-right: thin solid color("wth");
+        }
+
+        .tbox {
+          width: 0px;
+          padding: 0px;
+          transition: 0.6s;
+        }
+
+        .btn-letter {
+          background-color: color("primary");
+          color: color("wth");
+          text-transform: uppercase;
+          padding: 0 10px;
+          line-height: 40px;
+          cursor: pointer;
+        }
+
+        .tbox,
+        .btn-letter {
+          border: none;
+          outline: none;
+        }
+      }
+
+      .email-box:hover > .tbox,
+      .tbox:focus {
+        width: 6.5rem;
+        padding: 0 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .newsletter {
+    .form-new {
+      h2 {
+        font-weight: 900;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        font-size: 2rem !important;
+      }
+      .newsletter-text {
+        font-size: 1.2rem !important;
+      }
+      .newsletter-small {
+        padding: 0;
+        font-size: 1rem !important;
+      }
+
+      .email-box:hover > .tbox,
+      .tbox:focus {
+        width: 10rem !important;
+        padding: 0 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .newsletter {
+    .form-new {
+      h2 {
+        font-weight: 900;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        font-size: 1.8rem !important;
+      }
+      .newsletter-text {
+        padding: 0;
+        max-width: 600px;
+        margin-top: 10px auto;
+        font-weight: 300;
+        font-style: italic;
+        font-size: 1rem !important;
+      }
+      .newsletter-small {
+        padding: 0;
+        font-size: 0.8rem !important;
+      }
+
+      .email-box:hover > .tbox,
+      .tbox:focus {
+        width: 12rem !important;
+        padding: 0 1rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+$palette: (
+  "primary": rgb(56, 176, 0),
+  "primary-alpha": rgb(46, 122, 57),
+  "alpha-products": rgba(56, 176, 0, 0.7),
+  "second": rgb(36, 2, 41),
+  "second-alpha": rgba(36, 2, 41, 0.7),
+  "text": rgb(24, 23, 23),
+  "title": rgb(24, 23, 23),
+  "sub-title": rgb(51, 51, 51),
+  "blk": rgb(0, 0, 0),
+  "blk-alpha": rgba(0, 0, 0, 0.5),
+  "grey-dark": #666,
+  "wth": rgb(255, 255, 255),
+  "wth-alpha": rgba(255, 255, 255, 0.4),
+  "bg-body": #ededed,
+);
+
+$linear-gradient-span-mixer: linear-gradient(
+  90deg,
+  rgba(56, 255, 31, 1) 35%,
+  rgba(20, 255, 233, 1) 60%,
+  rgba(255, 0, 224, 1) 92%
+);
+
+$linear-gradient-span-btn: linear-gradient(
+  90deg,
+  rgba(56, 255, 31, 1) 80%,
+  rgba(56, 255, 31, 1) 80%,
+  rgba(56, 255, 31, 1) 80%,
+  rgba(56, 255, 31, 1) 80%
+);
+
+$gradient: (
+  "border-logo":
+    linear-gradient(
+      90deg,
+      rgba(56, 255, 31, 1) 80%,
+      rgba(56, 255, 31, 1) 80%,
+      rgba(56, 255, 31, 1) 80%,
+      rgba(56, 255, 31, 1) 80%
+    ),
+  "mixer":
+    linear-gradient(
+      90deg,
+      rgba(56, 255, 31, 1) 35%,
+      rgba(20, 255, 233, 1) 60%,
+      rgba(255, 0, 224, 1) 92%
+    ),
+);
+$themeColor: #007aff !default;
+$font: "Roboto", sans-serif;
+$max-width: 1200px;
+$header-height: 4rem;
+$navbar-height: 3.125rem;
+$border-rgb-mixer: 0.1875rem;
+$box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.1),
+  10px 10px 10px rgba(0, 0, 0, 0.4),
+  inset -5px -5px 5px rgba(255, 255, 255, 0.2),
+  inset 10px 10px 10px rgba(0, 0, 0, 0.4);
+$box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 0.2),
+  inset 3px 3px 5px rgba(0, 0, 0, 0.5);
+$box-shadow-1: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25);
+$box-shadow-mixer: -5px -5px 5px rgba(255, 255, 255, 0.1),
+  10px 10px 10px rgba(0, 0, 0, 0.4),
+  inset -5px -5px 5px rgba(255, 255, 255, 0.2),
+  inset 10px 10px 10px rgba(0, 0, 0, 0.4);
+$box-shadow-mixer-before: inset -2px -2px 5px rgba(255, 255, 255, 0.2),
+  inset 3px 3px 5px rgba(0, 0, 0, 0.5);

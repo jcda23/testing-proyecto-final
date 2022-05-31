@@ -1,0 +1,108 @@
+.main-guid-container {
+  .guid-pages-videos {
+    padding-top: 4rem;
+
+    .guid-container-video {
+      max-width: $max-width;
+      margin: 0;
+      .title-guid-video {
+        width: 100%;
+        h1 {
+          text-align: center;
+          color: color("sub-title");
+          text-transform: uppercase;
+          letter-spacing: 5px;
+        }
+      }
+    }
+  }
+
+  .guid-pages-text {
+    position: relative;
+    .guid-pages-container {
+      padding: 2rem 1rem;
+      .guid-pages {
+        .bg-guid-page {
+          width: 100%;
+          overflow: hidden;
+          .picture-guid-page {
+            position: relative;
+            display: block;
+            overflow: hidden;
+            pointer-events: none;
+            img {
+              display: inline-block;
+              width: 100%;
+              height: auto;
+              object-fit: cover;
+              border-style: none;
+              pointer-events: none;
+            }
+          }
+        }
+      }
+    }
+
+    .title-guid-pages {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 4rem 1rem 0 1rem;
+
+      h2 {
+        @extend .section-title;
+        padding-bottom: 2rem;
+      }
+      h4 {
+        max-width: 600px;
+        @extend .section-title;
+        font-weight: 300;
+        font-style: italic;
+        text-align: center;
+        padding: 3rem 1rem;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        border-bottom: none;
+      }
+    }
+    .article-gas {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 1rem;
+      .title-gas-guid {
+        @extend .title;
+        justify-content: center;
+        border-bottom: none;
+        margin: 0;
+        padding: 2rem 0 0 0;
+      }
+      .sub-title-gas-guid {
+        @extend .text;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main-guid-container {
+    .guid-pages-text {
+      .guid-pages-container {
+        padding: 2rem 0;
+      }
+
+      .title-guid-pages {
+        padding-right: 0;
+        padding-left: 0;
+      }
+      .article-gas {
+        padding: 0;
+        .title-gas-guid {
+          justify-content: left;
+        }
+      }
+    }
+  }
+}

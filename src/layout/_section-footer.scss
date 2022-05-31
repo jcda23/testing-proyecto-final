@@ -1,0 +1,249 @@
+.footer-container {
+  background-color: color("bg-body");
+  height: 100%;
+  padding-top: 4rem;
+  .footer {
+    padding: 0;
+    .footer-contact {
+      .footer-company {
+        .title-company {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          width: 100%;
+          h4 {
+            font-size: 1.5rem;
+          }
+        }
+
+        .text-company {
+          i {
+            color: color("primary");
+          }
+          p {
+            margin-right: 1rem;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 1rem 0;
+            font-size: 1rem;
+            letter-spacing: 2px;
+          }
+        }
+      }
+    }
+    .footer-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: color("text");
+      width: 100%;
+      margin: 0 auto;
+      border-bottom: thin solid color("sub-title");
+
+      .footer-title {
+        display: flex;
+        justify-content: center;
+        span {
+          font-size: 1.2rem;
+        }
+      }
+
+      .footer-social {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+
+        .content-icon {
+          padding: 20px;
+
+          a {
+            display: block;
+            width: 60px;
+            height: 60px;
+            background: #000;
+            color: #fff;
+            margin: 20px;
+            text-align: center;
+            border-radius: 100px;
+            transition: 0.3s ease all;
+          }
+          a i {
+            font-size: 20px;
+            line-height: 60px;
+          }
+          .twitter {
+            background: #1da1f2;
+          }
+
+          .facebook {
+            background: #3b5998;
+          }
+
+          .instagram {
+            background: #c13584;
+          }
+        }
+        .content-icon:hover a {
+          animation: icon 0.5s ease;
+        }
+        @keyframes icon {
+          from {
+            transform: rotate3d(0, 0, 0, 0);
+          }
+
+          to {
+            transform: rotate3d(0, 1, 0, 360deg);
+          }
+        }
+      }
+    }
+
+    .slogan {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: color("primary-alpha");
+      height: 300px;
+      width: 100%;
+      .slogan-container {
+        width: 100%;
+        height: 100%;
+        padding: 2rem 1rem 0 1rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        .slogan-logo {
+          a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: color("wth");
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            font-weight: bold;
+            img {
+              width: 3.5rem;
+              height: 3.5rem;
+            }
+          }
+        }
+        .slogan-text {
+          height: 100%;
+          p {
+            text-align: center;
+            text-transform: uppercase;
+            line-height: 1.6;
+            color: color("wth");
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+  .footer-copy-right {
+    width: 100%;
+    background-color: color("primary-alpha");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: color("wth");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-container {
+    .footer {
+      display: grid;
+      grid-template-columns: repeat(2 50%);
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .footer-container {
+    .footer {
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+
+      .footer-contact {
+        .footer-company {
+          .title-company {
+            padding-left: 33%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            padding-top: 15px;
+            color: color("primary");
+          }
+          .text-company {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-right: 0;
+            padding-left: 33%;
+          }
+        }
+      }
+
+      .footer-section {
+        grid-column: span 2;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .footer-title {
+          span {
+            margin-right: 2rem;
+            font-size: 1.5rem;
+          }
+        }
+      }
+
+      .footer-contact {
+        order: 1;
+      }
+
+      .slogan {
+        background-color: color("bg-body");
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        .slogan-container {
+          .slogan-logo {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+
+            a {
+              color: color("primary");
+            }
+          }
+          .slogan-text {
+            width: 100%;
+            height: 100%;
+            p {
+              text-align: justify;
+              color: color("sub-title");
+            }
+          }
+        }
+      }
+    }
+    .footer-copy-right {
+      grid-column: span 2;
+      width: 100%;
+      height: 30px;
+      letter-spacing: 4px;
+      background-color: color("primary-alpha");
+
+      small {
+        color: color("wth");
+      }
+    }
+  }
+}

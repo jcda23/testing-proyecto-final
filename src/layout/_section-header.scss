@@ -1,0 +1,45 @@
+.header {
+  width: 100%;
+  .content-header {
+    background-color: color("second");
+    @include flexible(flex, none, space-between, center);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: $header-height;
+    width: 100%;
+    padding: 0 1rem;
+    z-index: 999;
+
+    .logotype {
+      flex: 1 1 33%;
+      padding-left: 10px;
+      a {
+        color: color("wth");
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    background-color: color("second");
+    .content-header {
+      background-color: transparent;
+      @include flexible(flex, none, flex-star, center);
+      position: static;
+      top: 0;
+      padding: 1rem 1rem;
+      .logotype {
+        margin-left: 0;
+        a {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}

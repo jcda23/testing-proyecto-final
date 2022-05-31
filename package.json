@@ -1,0 +1,46 @@
+{
+  "name": "merximport",
+  "version": "1.0.0",
+  "description": "proyecto final de Coder House el presente proyecto cuenta con 5 paginas modularizadas con con node/scss, la matoria de las secciones de la pagina principal cuenta con componentes reutilizables asi como layouts independientes, se utilizaron modulo de node.js, swipper y sass. ULTIMOS CAMBIOS: 1) Se modifcó en gran parte la pagina principal en cuanto a la ubicación de secciones como en estilo, principalmente se elimino al hero image que que cubria la pagina principal por un backgroun de media pagina, a los fines de hacerla mas vistosa por se una pagina con fines empresariales, pero conservando un estilo moderno, 2) se modificaron los estilos del navbar y el header dividiendo en dos secciones en logo de la empresa y la barra de navagacion, dandole a esta ultima un efecto sticky del 100% de la pagina, 3) se agregó un banner a mitad de la pagina con el logo de la empresa, para dividir las secciones y hacerla algo mas bonita a nivel visual 4) se modificó la seccion de productos que antes eran unas tarjetas fijas con un efecto hover, ahora se agrego un slider automatico con una ventana nodal al darle click, donde se observa información de cada producto, conservando igualmente el estilo hover principal pero se le muesta al usuario informacion de dar click para llevarlo a la ventana nodal, para lograr el efecto de slider se descargaron los modulos de la pagina swiper y modifiqué los estilos scss, para no depender de un cdn. 5) se reconstruyó la sección de guias en este caso el main de la pagina principal, se agregarón unas imagenes con display grid y un efecto hover que lleva al usuario a la pagina de guias, la cual se encuentra ttalmente terminada y que muesra al ingresar unos tutoriales de toutuve referente a la tematica de la pagina asimismo, se muestra el contenido respecto a las guias mencionadas en la pagina principal 6) se agregó una nueva seccón a la pagina con un newsletter con efecto hover y transformaciones, que reposa encima de una hero image con efecto attachtment.7) Finalmente, se modificó totalmente el footer anexando un segundo footer que complementa el visual de la pagina en combinacion de los colores elegidos, este footer fue agregado a las paginas anexas. LA PAGINA FUE CONSTRUIDA EN TOTALIDAD CON FLEXBOX Y ALGO DE GRID. Se modificó ela pagina de variables scss, anidando los colores en una función map, se creo un mixin para darle posicionamiento a los contenedores con flexbox, y otro mixin para dar esilo a los background con imagenes que se utilizaron, se realizaron funciones extend con los estilos de texto, asi como las medidas de contenedores en algunos casos necesarias. Se agregaron las etiquetas meta para el posicionamiento con seo y las Keyword correspondientes Se optimizaron las imagenes para una carga rapida de la pagina SEO: Se buscaron palabras claves relacionadas a la actividad de la empresa, se verificó su ranking en distintas paginas especializadas, posteriormente se procedieron a agregar parrafos a las etiquetas con contenido atractivo para google y el usuario final, que abarcara las necesidades y los deseos de este ultimo, esos mismos parrafos se usaron como parte de las meta etiquetas, asimismo se resaltaron palagras a mi consideracion claves dentro de etiquetas strong, solo se tomo un h1 por paginas",
+  "main": "main.js",
+  "dependencies": {
+    "muuri": "^0.9.5",
+    "node-sass": "^7.0.1",
+    "swiper": "^8.1.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  },
+  "scripts": {
+    "scss": "sass --watch src/main.scss:assets/css/main.css",
+    "modules": "npm i",
+    "start": "nodemon assets/js/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcda23/TPROYECTO-FINAL-3-CODER.git"
+  },
+  "author": "JUAN CARLOS DA SILVA ASCANIO",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcda23/TPROYECTO-FINAL-3-CODER/issues"
+  },
+  "homepage": "https://github.com/jcda23/TPROYECTO-FINAL-3-CODER#readme",
+  "keywords": [
+    "camping",
+    "deporte",
+    "outdoor",
+    "gas",
+    "pipeta",
+    "bombona",
+    "estufa",
+    "termo",
+    "carpa",
+    "campo",
+    "aventura",
+    "acampar",
+    "paseo",
+    "diversion",
+    "amigos"
+  ]
+}

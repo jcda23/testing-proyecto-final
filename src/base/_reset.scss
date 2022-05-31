@@ -1,0 +1,32 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: $font;
+  background-color: #ededed;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+a:hover {
+  opacity: 0.75;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.sticky {
+  flex-grow: 1;
+}

@@ -1,0 +1,69 @@
+.products {
+  margin-top: 0;
+  height: 100%;
+  .swiper {
+    position: relative;
+    padding-bottom: 0;
+    .title-carousel {
+      @extend .title;
+      margin: 1rem auto;
+    }
+    .swiper-container {
+      height: 100%;
+      width: 100%;
+    }
+
+    .swiper-button-next {
+      right: 0.5vw;
+    }
+    .swiper-button-prev {
+      left: 0.5vw;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      position: absolute;
+      display: block;
+      top: 58%;
+      cursor: pointer;
+      background: none;
+      color: color("text");
+      opacity: 10%;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .products {
+    margin-top: 0;
+    .swiper {
+      padding-bottom: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .products {
+    margin-top: 2rem;
+    .swiper {
+      @include flexible(flex, column, center, center);
+      min-height: 40vh;
+      max-width: 1200px;
+      padding: 0 1rem 4rem 1rem;
+
+      .title-carousel {
+        margin-bottom: 4rem;
+        margin-top: 2rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .swiper-button-next {
+    right: 0;
+  }
+  .swiper-button-prev {
+    left: 0;
+  }
+}
