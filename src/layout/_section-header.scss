@@ -7,7 +7,7 @@
     left: 0;
     right: 0;
     top: 0;
-    height: $header-height;
+    height: 6rem;
     width: 100%;
     padding: 0 1rem;
     z-index: 999;
@@ -17,7 +17,7 @@
       padding-left: 10px;
       a {
         color: color("wth");
-        font-size: 1.2rem;
+        font-size: 2rem;
         font-weight: bold;
         text-transform: uppercase;
       }
@@ -34,6 +34,7 @@
       position: static;
       top: 0;
       padding: 1rem 1rem;
+      height: $header-height;
       .logotype {
         margin-left: 0;
         a {
